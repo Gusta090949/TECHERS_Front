@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body >
+
+
+    <div id="Notas">
+        <div style="border: 10px solid grey; width: 400px; height: 500px; background-color: white; text-align: center;">
+            
+            <h1>Adicionar Nova Nota</h1>
+              <hr>
+
+            <div class="form-container">
+                <Div style="width: 60px;">Titulo:</Div>
+                <input type="text" id="titulo" placeholder="Título do Card">
+                <Div style="width: 60px;">Conteudo:</Div>
+            
+                <input type="text" id="Conteudo" placeholder="Escreva sua nota aqui...">
+                 
+                <button onclick="criarCard()">Criar Card</button>
+            </div>
+            <hr>
+              <h2>Minhas Notas</h2>
+              <hr>
+            <div id="card-container" ></div>
+        </div>
+        </div>
+        
+        <script>
+        function criarCard() {
+            
+            let titulo = document.getElementById("titulo").value;
+            let descricao = document.getElementById("Conteudo").value;
+        
+            let card = document.createElement("div");
+            card.style.border = "1px solid black";
+            card.style.margin = "10px";
+            card.style.padding = "10px";
+        
+            card.innerHTML = "<h3>" + titulo + "</h3><p>" + descricao + "</p>";
+        
+            document.getElementById("card-container").appendChild(card);
+        }
+        </script>
+
+
+
+
+    
+
+
+  
+   
+
+   
+
+</body>
+</html>
