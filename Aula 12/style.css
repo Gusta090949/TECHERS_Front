@@ -1,0 +1,35 @@
+/* muda todos os p que estao dentro da div */
+/* para mudar algo dentro dele como o paragrafo coloca p ou nome da tag */
+
+.container p {
+    color:blue;
+    font-weight : blod;
+}
+
+/* altera so os filhos imediatos os netos sao ignorados */
+
+.container > p {
+    border-bottom: 2px solid black;
+}
+/* mira no p que vem logo apos o fechamento da div */
+.container + p {
+    color: gray;
+    font-style: italic;
+}
+
+.destaque {
+    background-color: bisque;
+    width: 200px; /* distancia interna */
+    padding: 20px; /* a moldura */
+    border: 5px solid #2980b9;/*distancia de outros elemento */
+    margin: 20px;
+}
+    *{
+    box-sizing: border-box;
+}
+.container {
+    width: 300px;
+    padding: 50px;
+    border: 10px solid black;
+
+}

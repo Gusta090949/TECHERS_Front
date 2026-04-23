@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.alvo
+{
+    background-color: gray;
+    padding: 50px; 
+    width: fit-content;
+    border-radius: 50%;
+    margin: 50px auto;
+
+}
+
+.alvo > div { 
+    background-color: blue;
+    padding: 50px;
+    border-radius: 50%;
+    border:solid black;
+   
+
+}
+
+.alvo div div{
+ background-color: red;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ margin: auto;
+
+}
