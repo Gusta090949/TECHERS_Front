@@ -1,0 +1,10 @@
+.item-lendario{
+    background-color: rgba(148, 139, 21, 0.76);
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    padding: 20px;
+   /* margin-bottom: 10px; */
+    border-radius: 5px ;
+    text-align: center;
+    display: inline;
+}

@@ -41,4 +41,26 @@ function criarCard(){
     document.getElementById("titulo").value = "";
     document.getElementById("Conteudo").value = "";
 
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // 1. Pega o elemento
+        const elemento = document.getElementById("Lendario");
+        
+        // 2. Lê o texto
+        const textoDiv = elemento.textContent.trim();
+        
+        // 3. Verifica e muda o background na hora
+        if (textoDiv === "Lendario") {
+            elemento.classList.add("especial");
+        }
+    });
+
+    observer.observe(elemento, { childList: true, characterData: true, subtree: true });
+    
+
+
 }
+
+
