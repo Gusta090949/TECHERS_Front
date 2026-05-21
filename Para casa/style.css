@@ -1,3 +1,83 @@
+
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#Notas{
+    border: 5px solid grey;
+    width: 400px;
+    min-height: 500px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card{
+    border: 1px solid rgb(14, 233, 87);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.delete-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.like-btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.like-btn:hover{
+    background-color: #bbb;
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+}
+
+.céu{
+    background-color: #cc7878;
+    color: black;
+}
+
+.neon{
+    box-shadow: 0 0 10px #39FF14;
+    color: black;
+}
+
+
+
+
+
 .item-lendario{
     background-color: rgba(148, 139, 21, 0.76);
     color: rgb(255, 255, 255);
