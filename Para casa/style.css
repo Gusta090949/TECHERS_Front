@@ -31,7 +31,22 @@ body{
     padding: 20px;
     border-radius: 5px;
     position: relative;
+
+    transition: all 0.3s ease;
 }
+
+.item-card:hover
+{
+    transform: scale (1.05)
+    box-shadow;
+}
+
+
+
+
+
+
+
 
 .delete-btn{
     position: absolute;
@@ -55,8 +70,25 @@ body{
     border-radius: 5px;
 }
 
-.like-btn:hover{
-    background-color: #bbb;
+
+
+
+
+.item-lendario{
+    background: linear-gradient(45deg, rgb(148, 139, 21), gold);
+
+    color: rgb(55, 255, 255) !important;
+
+    font-weight: bold;
+
+    border: 3px solid yellow;
+
+    box-shadow:
+        0 0 10px gold,
+        0 0 20px orange,
+        0 0 30px yellow;
+
+
 }
 
 .dark{
@@ -64,27 +96,14 @@ body{
     color: white;
 }
 
-.céu{
-    background-color: #cc7878;
+.ceu{
+    background-color: #87CEEB;
     color: black;
 }
 
 .neon{
-    box-shadow: 0 0 10px #39FF14;
+    background-color: #39FF14;
     color: black;
+    box-shadow: 0 0 15px #39FF14;
 }
 
-
-
-
-
-.item-lendario{
-    background-color: rgba(148, 139, 21, 0.76);
-    color: rgb(255, 255, 255);
-    font-weight: bold; 
-    padding: 20px;
-   /* margin-bottom: 10px; */
-    border-radius: 5px ;
-    text-align: center;
-    display: inline;
-}

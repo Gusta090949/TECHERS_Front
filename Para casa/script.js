@@ -1,22 +1,40 @@
-function criarCard(){
+function criarCard() {
 
     let titulo = document.getElementById("titulo").value;
     let descricao = document.getElementById("Conteudo").value;
-
     let select = document.getElementById("corFundo");
 
     let cor = select.value;
 
     let textoOpcao = select.options[select.selectedIndex].text;
 
-    if(titulo == ""){
+    if (titulo.trim() === "") {
         alert("Digite um nome!");
         return;
     }
 
+    
+
     let card = document.createElement("div");
 
-    card.className = "card " + cor;
+    mouseover
+    
+
+    mouseout
+    // identifica a palavra dentro da frase
+    const eLendario =
+        titulo.toLowerCase().includes("lendario") ||
+        descricao.toLowerCase().includes("lendario");
+
+    // adiciona classe
+    if (eLendario) {
+
+        card.className = "card " + cor + " item-lendario";
+
+    } else {
+
+        card.className = "card " + cor;
+    }
 
     card.innerHTML = `
         <button class="delete-btn">X</button>
@@ -28,39 +46,23 @@ function criarCard(){
         <p><strong>Poção escolhida:</strong> ${textoOpcao}</p>
     `;
 
-    // deletar card
+    // texto extra lendário
+    if (eLendario) {
+
+        card.innerHTML += `<p>⭐ ITEM LENDÁRIO ⭐</p>`;
+    }
+
+    // deletar
     let deleteBtn = card.querySelector(".delete-btn");
 
-    deleteBtn.onclick = function(){
+    deleteBtn.onclick = function() {
+
         card.remove();
     };
 
     document.getElementById("card-container").appendChild(card);
 
-    // limpar inputs
+    // limpar
     document.getElementById("titulo").value = "";
     document.getElementById("Conteudo").value = "";
-
-
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-        // 1. Pega o elemento
-        const elemento = document.getElementById("Lendario");
-        
-        // 2. Lê o texto
-        const textoDiv = elemento.textContent.trim();
-        
-        // 3. Verifica e muda o background na hora
-        if (textoDiv === "Lendario") {
-            elemento.classList.add("especial");
-        }
-    });
-
-    observer.observe(elemento, { childList: true, characterData: true, subtree: true });
-    
-
-
 }
-
-
